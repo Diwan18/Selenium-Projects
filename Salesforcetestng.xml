@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <parameter name="url" value="https://login.salesforce.com/"></parameter>
+  <parameter name="usrnm" value="gokul.sekar@testleaf.com"></parameter>
+  <parameter name="passwd" value="Leaf$123"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="project.Salesforce.CreateSalesAccount"/>
+      <class name="project.Salesforce.EditSalesAccount"/>
+      <class name="project.Salesforce.DeleteSalesAccount"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
